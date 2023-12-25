@@ -1,0 +1,386 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, serif;
+    max-width:100%;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+}
+
+header {
+    position: relative;
+}
+
+header img{
+width: 100%;
+height: 50vh;
+object-fit: cover;
+position: relative;
+top: -10px;
+z-index: 3;
+filter: blur(0.5px);
+}
+
+.imgg {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    filter: blur(2px);
+}
+
+header > nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 3;
+    top:0;
+    color: white;
+}
+
+header h3 {
+    margin: 0;
+    padding-top: 20px;
+    margin-left: 25px;
+    font-weight: 800;
+}
+
+header > nav div ul {
+    list-style-type: none;
+    display: inline-flex;
+    margin: 0;
+    position: relative;
+    
+    left: 40%;
+}
+
+header > nav ul li {
+    padding: 15px;
+    padding-top: 26px;
+    margin: 0;
+    font-size: small;
+    font-weight: 600;
+}
+
+.dots {
+    font-size: large;
+    position: relative;
+    font-weight: 800;
+    left: 70%;
+    top:-5px;
+}
+
+.container1 {
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.container1 h2 {
+    font-weight: 500;
+    color:rgb(59, 59, 59)
+}
+
+.container1 h1 {
+    font-size: 10rem;
+    margin: 0;
+    margin-left: 50px;
+    margin-top: -25px;
+    padding: 0;
+    position: relative;
+    top: 0;
+    color:rgb(59, 59, 59);
+    animation-name: movement;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes movement {
+    0% {left:0;top:0;}
+    25% {left:80px; top:0;}
+    50% {left:80px;top:0;}
+    100% {left:0;top:0;};
+}
+
+.sec-btn {
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: x-small;
+    padding: 6px;
+    font-weight: 500;
+    margin-top: 25px;
+    color: black;
+}
+
+.sec-btn:hover {
+    transform:scale(1.05);
+    z-index:1;
+}
+
+.container2 {
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+.container2 > div:hover {
+    transform:scale(1.05);
+    z-index:1;
+}
+
+.container2 h4 {
+    margin: 0;
+    margin-top: 10px;
+    color:rgb(59, 59, 59)
+}
+
+.container2 p {
+    margin: 0;
+    margin-top: 10px;
+    font-size: small;
+    color:rgb(59, 59, 59)
+}
+
+.hr {
+    width: 90%;
+    margin-top: 100px;
+}
+
+.hr3 {
+    width: 90%;
+    margin-top: 0px;
+}
+
+.fvg {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 0;
+    margin: 0 auto;
+}
+
+.fvg p {
+    margin: 0;
+    font-size: small;
+}
+
+.fvg2 {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    color:rgb(59, 59, 59);
+}
+
+.container3 {
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+
+.hr2{
+    margin-left: 0;
+    border-color:rgb(59, 59, 59);
+}
+
+.container3 h3 {
+    color:rgb(59, 59, 59);
+    font-weight: 500;
+}
+
+.container3 p {
+    font-size: small;
+}
+
+.container4 {
+    width: 100%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #252422;
+    color:#f9cdcd;
+    align-items: center;
+    position: relative;
+    top: -180px;
+    z-index: 3;
+    animation-name: color2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes color2 {
+    from {color:#f9cdcd;}
+    to {color:black;}
+}
+
+.container4 > div {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container4 h1 {
+    font-size: 5rem;
+    margin: -15px;
+    padding: 0;
+}
+
+.container41 {
+    width: 100%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    position: relative;
+    top: 0px;
+    z-index: 2;
+    margin-top: 0;
+    animation-name: color1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+
+    @keyframes color1 {
+        from {color:black;}
+        to {color:#f9cdcd;}
+    }
+
+
+.container41 img {
+    filter: blur(2px);
+    position: relative;
+    top: 130px;
+}
+
+.container41 > div {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container41 h1 {
+    font-size: 5rem;
+    margin: -15px;
+    padding: 0;
+    
+}
+
+.container42 {
+    width: 100%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #252422;
+    color:#f9cdcd;
+    align-items: center;
+    position: relative;
+    top: -370px;
+    z-index: 2;
+    animation-name: color2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes color2 {
+    from {color:black;}
+    to {color:#f9cdcd;}
+}
+
+.container42 img {
+    filter: blur(2px);
+    position: relative;
+    top: -40px;
+}
+.container42 > div {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container42 h1 {
+    font-size: 5rem;
+    margin: -15px;
+    padding: 0;
+}
+
+.sec2-btn {
+    border: 1px solid #f9cdcd;
+    border-radius: 20px;
+    font-size: x-small;
+    padding: 6px;
+    font-weight: 500;
+    margin-top: 25px;
+    color:#f9cdcd;
+    background-color: transparent;
+}
+
+.pp {
+    position: relative;
+    top:40px;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.pp1 {
+    position: relative;
+    top:0px;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.pp-sec {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    top:-415px;
+}
+
+.pp-hr {
+    position: relative;
+    top:-380px;
+}
+
+.pp-hr1 {
+    position: relative;
+    top:-350px;
+}
+
+.pp-hr2 {
+    position: relative;
+    top:-350px;
+}
+
+
+.seccc {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    top:-350px;
+}
+
+.seccc h4 {
+    margin: 0;
+    font-weight: 400;
+    position: relative;
+    left: -140px;
+    font-size: 2rem;
+}
+
+.arr {
+    position: relative;
+    top:-90px;
+}
